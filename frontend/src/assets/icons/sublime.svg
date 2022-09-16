@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19.996" viewBox="0 0 20 19.996">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c4c4c4"/>
+      <stop offset="1" stop-color="#dedede"/>
+      <stop offset="1" stop-color="#626262"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_19" data-name="Group 19" transform="translate(-970 -266)" style="isolation: isolate">
+    <g id="sublime-text" transform="translate(970 266)">
+      <path id="Path_67" data-name="Path 67" d="M45.826,46.6H27.374a.778.778,0,0,1-.774-.774V27.374a.778.778,0,0,1,.774-.774H45.826a.778.778,0,0,1,.774.774V45.826a.777.777,0,0,1-.774.77Z" transform="translate(-26.6 -26.6)" fill="#afafaf"/>
+      <path id="Path_68" data-name="Path 68" d="M129.6,88.379l10.466-3.321s.743-.389.564.331l.027,3.2s.13.47-.515.586l-4.252,1.329Z" transform="translate(-124.989 -82.341)" fill="#cecece"/>
+      <path id="Path_69" data-name="Path 69" d="M122.907,161.5s-.412.1-.291.8l-.022,3.084s-.036.389.7.546l10.372,3.339s.349.139.309-.291l0-3.438s.1-.354-.546-.586l-4.239-1.329Z" transform="translate(-118.297 -155.462)" fill="#c4c4c4"/>
+      <path id="Path_70" data-name="Path 70" d="M127.374,290.5l-4.414,1.347s-.533.018-.47,1.016,0,3.008,0,3.008.045.372.555.157l10.466-3.339s.372-.094.058-.2S127.374,290.5,127.374,290.5Z" transform="translate(-118.193 -278.687)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
