@@ -9,9 +9,9 @@ const Modal = ({ showModal, setShowModal }) => {
         { showModal && (
             <motion.div className="modal-blur">
                 <motion.div className="modal-background"
-                initial={{y: -500 }}
+                initial={{y: -800 }}
                 animate={{ y: 0 }}
-                exit={{ y: -500 }}
+                exit={{ y: -800 }}
                 transition={{ duration: 0.9, type: 'spring' }}
                 >
                     <ul className="modal-links">

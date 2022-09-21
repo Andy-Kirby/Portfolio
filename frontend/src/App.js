@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Modal from './components/Modal'
 import NotFound from './components/NotFound'
+import ScrollToTop from './components/ScrollToTop'
 
 
 const Layout = () => (
@@ -23,7 +24,8 @@ const Layout = () => (
 const App = () => {
   return (
     <>
-    <BrowserRouter>      
+    <BrowserRouter>
+    <ScrollToTop />      
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Landing />} />

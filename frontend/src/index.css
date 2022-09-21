@@ -17,9 +17,9 @@ body {
 header {
   position: sticky;
   top: 0px;
-  background: white;
+  background-color: #5a6573;
+  box-shadow: 0px 1px 10px #1d1d1d;
   z-index: 100;
-  box-shadow:  5px 5px 6px #919191;
 }
 header .container {
   display: flex;
@@ -34,7 +34,11 @@ header .container {
   z-index: 100;
 }
 .logo {
-  margin-top: 10px;
+  margin-left: 10rem;
+  font-size: 2rem;
+  font-family: signature;
+  color: #ffffff;
+  text-decoration: none;
 }
 .center {
   display: none;
@@ -49,7 +53,7 @@ header .container {
 .not-active {
   font-family: Blair;
   text-decoration: none;
-  color: lightslategray;
+  color: rgb(255, 255, 255);
 }
 ul {
   display: flex;
@@ -73,7 +77,14 @@ ul li:nth-child(2){
   box-sizing: border-box;
   font-family: Blair;
   color: #ffffff;
-  padding-left: 10vw;
+  padding-left: 15vw;
+}
+.macbook {
+  margin-left: 40vw;
+  margin-top: 8vh;
+  position: absolute;
+  max-width: 70%;
+  max-height: 70%;
 }
 .main-landing {
   margin-top: 20vh;
@@ -83,19 +94,19 @@ ul li:nth-child(2){
 }
 .hi-landing {
   font-size: 1.4rem;
+  line-height: 1.8rem;
   margin-top: 5vh;
   padding-right: 10vw;
 
 }
 .lets-go {
-  margin-left: 60vw;
-  margin-top: 25vh;
+  margin-top: 15vh;
   border-radius: 10px;
   background: none;
   border-style: solid;
   padding: 15px;
   cursor: pointer;
-  width: 125px;
+  width: 145px;
   color: #ffffff;
   box-shadow: 0px 0px 10px#ffffff;
   font-family: Blair;
@@ -103,7 +114,7 @@ ul li:nth-child(2){
 }
 .about-container {
   display: flex;
-  background: linear-gradient(100deg, white 50%, #ebebeb 51%);
+  background: linear-gradient(100deg, #ffffff 50%, #d0d0d0 50.5%);
   height: 100%;
 }
 .about-left {
@@ -111,15 +122,13 @@ ul li:nth-child(2){
   flex-direction: column;
   align-items: center;
   width: 46.5vw;
-  padding: 20px;
-  /* background-color: aqua; */
+  padding: 20px 0px;
 }
 .andykirby {
   align-self: center;
-  /* margin-left: 7vw; */
   margin-top: 25px;
   height: 16.5rem;
-  width: 15.6rem;
+  width: 15.4rem;
   border-radius: 10px;
   box-shadow:  5px 5px 10px #656565,
               -5px -5px 10px #d3d3d3;
@@ -139,13 +148,15 @@ ul li:nth-child(2){
   align-self:flex-end;
   font-family: Signature;
   font-size: 2rem;
+  color: #212529;
 }
 .print-name {
   margin-right: 110px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   align-self:flex-end;
   font-family: Blair;
   font-size: 1rem;
+  color: #000000;
 }
 .about-right {
   display: flex;
@@ -154,17 +165,18 @@ ul li:nth-child(2){
   
   margin-left: 8vw;
   width: 47vw;
-  /* background: #ed0b0b; */
 }
 .tech-title {
   font-family: Blair;
+  color: #000000;
   font-size: 1.2rem;
   margin-top: 45px;
 }
 .tech-sub {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   font-family: Blair;
+  color: #000000;
   font-size: 0.9rem;
   padding: 12px;
 }
@@ -179,14 +191,17 @@ ul li:nth-child(2){
   padding: 10px;
 }
 .skill-name {
+  display: flex;
+  justify-content: center;
   font-family: Blair;
   font-size: 1rem;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 10px;
   width: 110px;
-  background: linear-gradient(145deg, #ffffff, #d8d8d8);
-  box-shadow:  1px 1px 2px #a8a8a8,
-               -1px -1px 2px #ffffff;
+  color: #ffffff;
+  background: #5a6573;
+  box-shadow:  1px 1px 2px #676767,
+               -1px -1px 2px #a7a7a7;
 }
 .tech-sub-cards {
   display: flex;
@@ -201,22 +216,27 @@ ul li:nth-child(2){
   flex-direction: column;
 }
 .project-container {
-  height: 56.75vh;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Blair;
+  color: #d0d0d0;
 }
 .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
-  height: 58.5vh;
+  background: #d5d5d5;
+  height: 60vh;
 }
 .contact-title {
   display: flex;
   margin-top: 50px;
   font-family: Blair;
   font-size: 2rem;
-  color: #393939;
+  color: #000000;
 }
 .contact-card {
   margin-top: 30px;
@@ -322,10 +342,11 @@ input.input-error, select.input-error, textarea.input-error, select.input-error 
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #828282;
-  box-shadow: 0px 3px 10px #000000;
+  background-color: #5a6573;
+  box-shadow: 0px 1px 20px #1d1d1d;
   height: 30vh;
   font-family: Blair;
+  color: #ebebeb;
 }
 .icon-container {
   display: flex;
@@ -340,7 +361,6 @@ input.input-error, select.input-error, textarea.input-error, select.input-error 
   margin: 5px;
   height: 45px;
   width: 55px;
-  /* background: linear-gradient(145deg, #ffffff, #474747); */
   border-radius: 35px;
 }
 .contact-instagram:hover #instagram-btn {
@@ -352,7 +372,12 @@ input.input-error, select.input-error, textarea.input-error, select.input-error 
 .contact-mail:hover #mail-btn {
   filter: invert(75%) sepia(79%) saturate(569%) hue-rotate(360deg) brightness(107%) contrast(105%);
 }
-
+.not-found {
+  display: flex;
+  margin-top: 20%;
+  justify-content: center;
+  font-family: Blair;
+}
 
 /* ---------------------------------------------- MOBILE DEVICE ------------------------------------------------- */
 
@@ -364,7 +389,13 @@ body {
 ul {
   display: none;
 }
-
+.macbook {
+  display: none;
+}
+.logo {
+  margin-left: 10rem;
+  font-size: 2rem;
+}
 .center {
   display: block;
   width: 30px;
@@ -373,7 +404,7 @@ ul {
 .center:before,
 .center:after,
 .center div {
-  background: rgb(116, 116, 116);
+  background: rgb(66, 66, 66);
   content: "";
   display: block;
   height: 2px;
@@ -408,15 +439,15 @@ ul {
 .modal-background {
   position: fixed;
   display: flex;
-  top: 70px;
-  height: 40vh;
+  top: 50px;
+  height: 92vh;
   width: 95vw;
   background: #f9f9f9;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   border: #474747;
   border-style: solid;
-  border-radius: 3px;
+  border-radius: 9px;
 
 }
 .modal-links {
@@ -424,10 +455,8 @@ ul {
   flex-direction: column;
   font-family: Blair;
   color: rgb(85, 85, 85);
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   padding: 5px;
-  /* text-shadow: 2px 2px 16px #0016e0; */
-  /* align-items: center; */
   justify-content: space-between;
   text-decoration: none;
   z-index: 100;
@@ -435,9 +464,21 @@ ul {
 ul li:nth-child(2){
   display: block;
 }
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('./assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  font-family: Blair;
+  color: #ffffff;
+  padding-left: 10vw;
+}
 .main-landing {
   margin-top: 20vh;
-  font-size: 3rem;
+  font-size: 1rem;
   margin-bottom: 5vh;
   padding-right: 10vw;
 }
@@ -482,12 +523,14 @@ ul li:nth-child(2){
   align-self:flex-end;
   font-family: Blair;
   font-size: 0.8rem;
+  margin-bottom: 30px;
 }
 .about-right {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 60px;
   margin-left: 0vw;
+  height: 90vh;
   width: 100vw;
-  background-color: #ebebeb;
+  background-color: #bbbbbb;
 }
 .tech-title {
   font-family: Blair;
@@ -502,14 +545,12 @@ ul li:nth-child(2){
 }
 .tech-sub-cards {
   display: flex;
-  /* flex-direction: column; */
 }
 .skill-card {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0px 0px;
-  /* justify-content: space-between; */
 }
 .skill-svg {
   padding: 0px;
@@ -519,20 +560,25 @@ ul li:nth-child(2){
   padding: 6px;
   margin: 12px;
 }
+.project-container {
+  height: 62vh;
+}
 .contact-title{
   font-size: 1.4rem;
-  margin-top: 70px;
+  margin-top: 90px;
 }
 .contact-container {
-  height: 70vh;
+  height: 62vh;
 }
 .contact-card {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
   margin-bottom: 10px;
 }
 form {
   display: flex;
   flex-direction: column;
-  width: 80vw;
 }
 .contact-fields  {
   display: flex;
@@ -559,11 +605,436 @@ form {
   font-size: 0.7rem;
 }
 }
+/* ---------------------------------------------- SMALL TABLET ------------------------------------------------- */
 
 @media  screen and (max-width: 768px) {
-  
+body {
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+ul {
+  display: none;
+}
+.macbook {
+  margin-left: 35vw;
+  margin-top: 5vh;
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+}
+.logo {
+  margin-left: 10rem;
+  font-size: 2rem;
+}
+.center {
+  display: block;
+  width: 30px;
 }
 
+.center:before,
+.center:after,
+.center div {
+  background: rgb(66, 66, 66);
+  content: "";
+  display: block;
+  height: 2px;
+  border-radius: 6px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.open:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.open:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.open div {
+  transform: scale(0);
+}
+.modal-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+.modal-blur {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* background: #ffffff; */
+  justify-content: center;
+  /* background-color: rgba(123, 123, 123, 0.5); */
+}
+.modal-background {
+  position: fixed;
+  display: flex;
+  top: 50px;
+  height: 92vh;
+  width: 95vw;
+  background: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  border: #474747;
+  border-style: solid;
+  border-radius: 9px;
 
+}
+.modal-links {
+  display: flex;
+  flex-direction: column;
+  font-family: Blair;
+  color: rgb(85, 85, 85);
+  font-size: 1.4rem;
+  padding: 5px;
+  justify-content: space-between;
+  text-decoration: none;
+  z-index: 100;
+}
+ul li:nth-child(2){
+  display: block;
+}
+.main-landing {
+  margin-top: 20vh;
+  font-size: 3rem;
+  margin-bottom: 5vh;
+  padding-right: 10vw;
+}
+.hi-landing {
+  font-size: 1rem;
+  margin-top: 5vh;
+  padding-right: 10vw;
+  line-height: 180%;
+}
+.lets-go {
+  margin-left: 45vw;
+}
+.contact-card {
+  margin-top: 28px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-left {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.about-text {
+  text-align: center;
+  font-family: Blair;
+  font-size: 1.2rem;
+  max-width: 30ch;
+  padding: 0px;
+}
+.signature {
+  margin-top: 0px;
+  font-family: Signature;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.print-name {
+  margin-right: 100px;
+  align-self:flex-end;
+  font-family: Blair;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+.about-right {
+  scroll-margin-top: 60px;
+  margin-left: 0vw;
+  height: 90vh;
+  width: 100vw;
+  background-color: #bbbbbb;
+}
+.tech-title {
+  font-family: Blair;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.tech-sub {
+  align-self: center;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.tech-sub-cards {
+  display: flex;
+}
+.skill-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 0px;
+}
+.skill-svg {
+  padding: 0px;
+}
+.skill-name {
+  width: 95px;
+  padding: 6px;
+  margin: 12px;
+}
+.contact-title{
+  font-size: 1.4rem;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+.contact-container {
+  height: 62vh;
+}
+.contact-card {
 
+  margin-bottom: 0px;
+}
+form {
+  display: flex;
+  margin-top: -10px;
+  flex-direction: column;
+  width: 50vw;
+}
+.contact-fields  {
+  display: flex;
+  flex-direction: column;
+}
+.first-last {
+  flex-direction: column;
+}
+.email-phone {
+  flex-direction: column;
+}
 
+#message {
+  width: 250px;
+  border-radius: 8px;
+}
+.submit {
+  width: 270px;
+  margin-bottom: -10px;
+}
+.footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.7rem;
+}
+}
+
+@media  screen and (max-width: 1024px) {
+body {
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+ul {
+  display: none;
+}
+.macbook {
+  margin-left: 30vw;
+  margin-top: 5vh;
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+}
+.logo {
+  margin-left: 8rem;
+  font-size: 1.6rem;
+}
+.center {
+  display: block;
+  width: 30px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: rgb(66, 66, 66);
+  content: "";
+  display: block;
+  height: 2px;
+  border-radius: 6px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.open:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.open:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.open div {
+  transform: scale(0);
+}
+.modal-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+.modal-blur {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* background: #ffffff; */
+  justify-content: center;
+  /* background-color: rgba(123, 123, 123, 0.5); */
+}
+.modal-background {
+  position: fixed;
+  display: flex;
+  top: 50px;
+  height: 92vh;
+  width: 95vw;
+  background: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  border: #474747;
+  border-style: solid;
+  border-radius: 9px;
+
+}
+.modal-links {
+  display: flex;
+  flex-direction: column;
+  font-family: Blair;
+  color: rgb(85, 85, 85);
+  font-size: 1.5rem;
+  padding: 5px;
+  justify-content: space-between;
+  text-decoration: none;
+  z-index: 100;
+}
+ul li:nth-child(2){
+  display: block;
+}
+.main-landing {
+  margin-top: 20vh;
+  font-size: 3rem;
+  margin-bottom: 5vh;
+  padding-right: 10vw;
+}
+.hi-landing {
+  font-size: 1rem;
+  margin-top: 5vh;
+  padding-right: 10vw;
+  line-height: 180%;
+}
+.lets-go {
+  margin-left: 45vw;
+}
+.contact-card {
+  margin-top: 28px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-left {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.about-text {
+  text-align: center;
+  font-family: Blair;
+  font-size: 1.2rem;
+  max-width: 30ch;
+  padding: 0px;
+}
+.signature {
+  margin-top: 0px;
+  font-family: Signature;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.print-name {
+  margin-right: 100px;
+  align-self:flex-end;
+  font-family: Blair;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+.about-right {
+  scroll-margin-top: 60px;
+  margin-left: 0vw;
+  height: 90vh;
+  width: 100vw;
+  background-color: #bbbbbb;
+}
+.tech-title {
+  font-family: Blair;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.tech-sub {
+  align-self: center;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.tech-sub-cards {
+  display: flex;
+}
+.skill-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 0px;
+}
+.skill-svg {
+  padding: 0px;
+}
+.skill-name {
+  width: 95px;
+  padding: 6px;
+  margin: 12px;
+}
+.contact-title{
+  font-size: 1.4rem;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+.contact-container {
+  height: 62vh;
+}
+.contact-card {
+
+  margin-bottom: 0px;
+}
+form {
+  display: flex;
+  margin-top: -10px;
+  flex-direction: column;
+  width: 50vw;
+}
+.contact-fields  {
+  display: flex;
+  flex-direction: column;
+}
+.first-last {
+  flex-direction: column;
+}
+.email-phone {
+  flex-direction: column;
+}
+
+#message {
+  width: 250px;
+  border-radius: 8px;
+}
+.submit {
+  width: 270px;
+  margin-bottom: -10px;
+}
+.footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.7rem;
+}
+}
