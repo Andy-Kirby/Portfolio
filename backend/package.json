@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "npm run build",
+    "buildClient": "npm run build",
     "client": "npm start --prefix client",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run buildClient"
   },
   "keywords": [],
   "author": "",
