@@ -18,13 +18,10 @@ app.listen(process.env.PORT, () => {
 // app.use(express.static(path.join(__dirname, 'frontend/public')));
 app.use(express.static(path.join(__dirname, './frontend/build')));
 app.use(express.json());
-app.use(cors({
-    credentials:true,
-    origin: ['http://localhost:PORT']
-  }));
+app.use(cors());
 
-app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'))});
+// app.get('*', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'))});
 
 //post request
 app.post('/', async (req, res) => {
