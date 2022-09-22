@@ -16,7 +16,7 @@ app.listen(process.env.PORT, () => {
 
 //middleware
 // app.use(express.static(path.join(__dirname, 'frontend/public')));
-app.use(express.static(path.join(__dirname + '/frontend/public')));
+app.use(express.static(path.join(__dirname, './frontend/build')));
 app.use(express.json());
 app.use(cors());
 
