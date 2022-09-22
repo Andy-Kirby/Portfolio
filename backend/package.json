@@ -5,11 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node index.js",
     "dev": "nodemon server.js",
-    "buildClient": "npm build",
-    "client": "npm start --prefix client",
-    "heroku-postbuild": "npm install && npm run buildClient"
+    "build": "npm run build",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "keywords": [],
   "author": "",
