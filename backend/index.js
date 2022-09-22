@@ -10,10 +10,7 @@ const app = express()
 
 
 //listen for requests
-app.listen(process.env.PORT, () => {
-    console.log('listening on port 4000!')
-})
-
+app.listen(process.env.PORT, 'localhost')
 //middleware
 // app.use(express.static(path.join(__dirname, 'frontend/public')));
 app.use(express.static(path.join(__dirname, './frontend/build')));
