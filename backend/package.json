@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    // "dev": "nodemon server.js",
-    // "build": "webpack --config webpack.config.js",
-    // "heroku-postbuild": "npm install && npm run-script build"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
