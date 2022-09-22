@@ -7,7 +7,7 @@ const cors = require('cors')
 
 //express app
 const app = express()
-
+app.enable('trust proxy')
 
 //listen for requests
 app.listen(process.env.PORT, () => {
