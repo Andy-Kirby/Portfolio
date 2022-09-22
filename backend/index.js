@@ -10,12 +10,18 @@ const app = express()
 
 
 //listen for requests
-app.listen(process.env.PORT, 'localhost')
+app.listen(process.env.PORT, () => {
+    console.log('listening on port 4000!')
+})
+
 //middleware
 // app.use(express.static(path.join(__dirname, 'frontend/public')));
 app.use(express.static(path.join(__dirname, './frontend/build')));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    credentials:true,
+    origin: ['http://localhost:PORT']
+  }));
 
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'))});
