@@ -1,6 +1,7 @@
 require('dotenv').config()
 const nodemailer = require("nodemailer");
 const express = require('express')
+const path = require('node:path')
 const cors = require('cors')
 
 
@@ -16,10 +17,10 @@ app.listen(process.env.PORT, () => {
 //middleware
 app.use(express.static(path.join(__dirname, 'frontend/public')));
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'))});
 
 //post request
 app.post('/', async (req, res) => {
