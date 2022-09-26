@@ -28,10 +28,10 @@ const ContactForm = () => {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json; charset=utf-8'
                 },
-                body: values
+                body: JSON.stringify(values, null, 2)
             })
             resetForm();
-          console.log(JSON(values, null, 2));
+          console.log(JSON.stringify(values, null, 2));
         },
         
       });
