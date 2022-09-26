@@ -1,0 +1,18 @@
+{
+    "name": "andykirby",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "start": "cd ./backend/ && npm install && node server.js",
+      "heroku-postbuild": "cd ./frontend/ && npm install && npm run build",
+      "backend": "cd ./backend/ && nodemon server.js ",
+      "frontend": "cd ./frontend/ && yarn run start",
+      "test":"cd ./frontend/ && npm run test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "npm-run-all": "^4.1.5"
+    }
+  }
