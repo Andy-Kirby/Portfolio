@@ -8,6 +8,7 @@ const cors = require('cors')
 //express app
 const app = express()
 app.enable('trust proxy')
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, './frontend/build')));
 app.get("/*", function(req, res) {
@@ -22,7 +23,7 @@ app.listen(process.env.PORT, () => {
 
 //middleware
 app.use(express.json());
-app.use(cors());
+
 
 
 //post request
@@ -64,5 +65,6 @@ let transporter = nodemailer.createTransport({
 });
 
 console.log("Message sent: %s", info.messageId);
+res.sendStatus((200))
 res.send({sent:'Message sent'})
 });

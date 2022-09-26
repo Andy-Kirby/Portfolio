@@ -22,7 +22,7 @@ const ContactForm = () => {
         },
         validationSchema: validationSchema,
         onSubmit: (values, {resetForm}) => {
-            fetch('https://localhost:4000/', {
+            fetch('https://andykirby.herokuapp.com:4000/', {
                 method: 'POST',
                 headers: { 
                     'Accept': 'application/json',
