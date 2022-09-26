@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-      "start": "cd ./backend/ && npm install && node server.js",
+      "start": "cd ./backend/ && npm install && node index.js",
       "heroku-postbuild": "cd ./frontend/ && npm install && npm run build",
-      "backend": "cd ./backend/ && nodemon server.js ",
-      "frontend": "cd ./frontend/ && yarn run start",
+      "backend": "cd ./backend/ && node index.js ",
+      "frontend": "cd ./frontend/ && npm run start",
       "test":"cd ./frontend/ && npm run test"
     },
     "keywords": [],
