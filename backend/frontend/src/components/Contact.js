@@ -28,7 +28,7 @@ const ContactForm = () => {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json; charset=utf-8'
                 },
-                body: JSON(values, null, 2)
+                body: values
             })
             resetForm();
           console.log(JSON(values, null, 2));
