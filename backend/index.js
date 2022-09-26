@@ -15,7 +15,7 @@ app.get("/*", function(req, res) {
     res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
     });
 
-
+console.log(process.env.PORT)
 //listen for requests
 app.listen(process.env.PORT, () => {
     console.log('listening on port 4000!')
