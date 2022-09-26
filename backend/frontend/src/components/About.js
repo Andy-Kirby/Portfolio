@@ -1,5 +1,5 @@
 import { React } from 'react'
-import { Languages1, Languages2, Tools1, Tools2, Software1, Software2 } from '../components/Skill'
+import { Languages1, Languages2, Tools1, Tools2, Software1, Software2 } from './Skill'
 
 
 const About = () => {

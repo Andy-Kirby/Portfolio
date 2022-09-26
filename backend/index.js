@@ -51,6 +51,7 @@ let transporter = nodemailer.createTransport({
     tls:{
         rejectUnauthorized:false
     }
+    
     });
 
     // send mail with defined transport object
