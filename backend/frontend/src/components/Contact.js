@@ -23,15 +23,15 @@ const ContactForm = () => {
         validationSchema: validationSchema,
         onSubmit: (values, {resetForm}) => {
             fetch('https://andykirby.herokuapp.com:4000/', {
-                type: 'POST',
+                method: 'POST',
                 headers: { 
                     'Accept': 'application/json',
                     'Content-Type': 'application/json; charset=utf-8'
                 },
-                body: JSON.stringify(values, null, 2)
+                body: JSON(values, null, 2)
             })
             resetForm();
-          console.log(JSON.stringify(values, null, 2));
+          console.log(JSON(values, null, 2));
         },
         
       });
