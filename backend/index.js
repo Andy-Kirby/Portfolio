@@ -9,16 +9,22 @@ const cors = require('cors')
 const app = express()
 app.enable('trust proxy')
 
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+    app.get("/*", function(req, res) {
+        res.sendFile(path.join(__dirname, "./client/build/index.html"));
+      });
+}
+
 //listen for requests
 app.listen(process.env.PORT, () => {
     console.log('listening on port 4000!')
 })
 
 //middleware
-// app.use(express.static(path.join(__dirname, 'frontend/public')));
-app.use(express.static(path.join(__dirname, './frontend/build')));
-app.use(express.json());
-app.use(cors());
+// app.use(express.static(path.join(__dirname, './frontend/build')));
+// app.use(express.json());
+// app.use(cors());
 
 // app.get('*', function(req, res) {
 //     res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'))});
