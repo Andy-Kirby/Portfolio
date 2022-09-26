@@ -12,7 +12,7 @@ app.enable('trust proxy')
 
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 app.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+    res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
     });
 
 console.log('Testing ENV', process.env.PORT)
