@@ -1,18 +1,22 @@
 {
-    "name": "andykirby",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-      "start": "node index.js",
-      "heroku-postbuild": "cd ./frontend/ && npm install && npm run build",
-      "backend": "cd ./backend/ && node index.js ",
-      "frontend": "cd ./frontend/ && npm run start",
-      "test":"cd ./frontend/ && npm run test"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-      "npm-run-all": "^4.1.5"
-    }
+  "name": "andykirby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd ./frontend/ && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.20",
+    "react-scripts": "^5.0.1"
   }
+}
