@@ -10,12 +10,11 @@ const app = express()
 app.enable('trust proxy')
 
 
-app.use(express.static(path.join(__dirname, '../frontend/build')));
+app.use(express.static(path.join(__dirname, 'frontend/build')));
 app.get("/*", function(req, res) {
-    res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
     });
 
-console.log('Testing ENV', process.env.PORT)
 //listen for requests
 app.listen(process.env.PORT, () => {
     console.log('listening on port 4000!')
