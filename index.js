@@ -65,7 +65,7 @@ let transporter = nodemailer.createTransport({
 
 console.log("Message sent: %s", info.messageId);
 res.sendStatus((200))
-res.send({sent:'Message sent'})
+// res.send({sent:'Message sent'})
 } catch (error) {
   res.json({error: error.message})
 }
