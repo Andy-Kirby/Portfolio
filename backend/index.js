@@ -17,7 +17,7 @@ app.get("/*", function(req, res) {
 
 //listen for requests
 app.listen(port, () => {
-    console.log('listening on port ${port}!')
+    console.log('listening on port:' ${port})
 })
 
 //middleware
