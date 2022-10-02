@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const Footer = () => {
     return (
-        <div className="footer-container">
+        <motion.div className="footer-container" initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 2}}} exit={{opacity: 0}}>
             <div style={{ fontSize: "1rem", color: "#ebebeb", marginTop: "45px" }}>GET IN TOUCH</div>
             <div style={{ backgroundColor: "#aaaaaa", height: "1px", width: "60px", margin: "20px"}}></div>
             <div className="icon-container">
@@ -13,8 +13,8 @@ const Footer = () => {
                 <motion.a href="https://github.com/Andy-Kirby" className="contact-github" whileHover= {{scale: 1.2}}><img src={ Github } id="github-btn" alt=""></img></motion.a>
                 <motion.a href="mailto:info@andykirby.co.uk" className="contact-mail" whileHover= {{scale: 1.2}}><img src={ Email } id="mail-btn" alt=""></img></motion.a>
             </div>
-            <div style={{ padding: "25px" }}className="copyright">ANDREW KIRBY © 2022</div>
-        </div>
+            <div style={{ padding: "25px" }}className="copyright">© 2022 ANDREW KIRBY. All Rights Reserved. </div>
+        </motion.div>
     )
 }
 

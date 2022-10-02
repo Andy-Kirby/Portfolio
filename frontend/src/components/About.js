@@ -1,10 +1,11 @@
 import { React } from 'react'
 import { Languages1, Languages2, Tools1, Tools2, Software1, Software2 } from './Skill'
+import { motion } from "framer-motion"
 
 
 const About = () => {
     return (
-        <div className="about-container" id="top">
+        <motion.div className="about-container" id="top" initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 2}}} exit={{opacity: 0}}>
             <div className="about-left">
                 <img className="andykirby" src={require('../assets/images/andykirby.png')} alt={""}></img>
                 <div style={{ background: "#dfdfdf", height: "3px", width: "60px", margin: "25px", borderRadius: "6px" }}></div>
@@ -36,7 +37,7 @@ const About = () => {
                 </div>
                 <div style={{ background: "#5a6573", height: "3px", width: "60px", margin: "30px", borderRadius: "6px" }}></div>
             </div>
-        </div>
+        </motion.div>
     )
 };
 

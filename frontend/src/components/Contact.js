@@ -37,12 +37,12 @@ const ContactForm = () => {
       });
 
       return (
-        <div className='contact-container'>
+        <motion.div className='contact-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 2}}} exit={{opacity: 0}}>
             <div className='contact-title'>LETS WORK TOGETHER...</div>
             <motion.div className='contact-card'
-                initial={{ y: '-100vh' }}
-                animate={{ y: '0' }}
-                transition={{ duration: 2, type: 'spring' }}
+                initial={{ y: '-100vh', opacity:0}}
+                animate={{ y: '0', opacity: 1 }}
+                transition={{ duration: 2, type: 'spring', delay: 1.5 }}
                 >
                 <form onSubmit={formik.handleSubmit}>
                     <div className='contact-fields'>
@@ -118,7 +118,7 @@ const ContactForm = () => {
                     <button className="submit" type="submit">Send</button>
                 </form>
             </motion.div>
-        </div>
+        </motion.div>
         
       );
     };

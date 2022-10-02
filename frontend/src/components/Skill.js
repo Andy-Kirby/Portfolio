@@ -6,8 +6,8 @@ const Languages1 = () => {
     return (
         <React.Fragment>
             <motion.div className='language1'
-                initial={{ x: "50vw" }}
-                animate={{ x: "0" }}
+                initial={{ x: "35vw" }}
+                whileInView={{ x: "0" }}
                 viewport={{ once: true }}
                 transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
@@ -30,8 +30,9 @@ const Languages2 = () => {
     return (
         <React.Fragment>
             <motion.div className='language1'
-                initial={{ x: "50vw" }}
-                animate={{ x: "0" }}
+                initial={{ x: "22vw" }}
+                whileInView={{ x: "0" }}
+                viewport={{ once: true }}
                 transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.html } alt={""}></img>
@@ -49,8 +50,9 @@ const Tools1 = () => {
     return (
         <React.Fragment>
             <motion.div className='language1'
-                initial={{ x: "50vw" }}
-                animate={{ x: "0" }}
+                initial={{ x: "35vw" }}
+                whileInView={{ x: "0" }}
+                viewport={{ once: true }}
                 transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.react } alt={""}></img>
@@ -72,8 +74,9 @@ const Tools2 = () => {
     return (
         <React.Fragment>
             <motion.div className='language1'
-                initial={{ x: "50vw" }}
-                animate={{ x: "0" }}
+                initial={{ x: "22vw" }}
+                whileInView={{ x: "0" }}
+                viewport={{ once: true }}
                 transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.express } alt={""}></img>
@@ -95,8 +98,9 @@ const Software1 = () => {
     return (
         <React.Fragment>
             <motion.div className='language1'
-                initial={{ x: "50vw" }}
-                animate={{ x: "0" }}
+                initial={{ x: "35vw" }}
+                whileInView={{ x: "0" }}
+                viewport={{ once: true }}
                 transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.apple } alt={""}></img>
@@ -118,8 +122,9 @@ const Software2 = () => {
     return (
         <React.Fragment>
             <motion.div className='language1'
-                initial={{ x: "50vw" }}
-                animate={{ x: "0" }}
+                initial={{ x: "22vw" }}
+                whileInView={{ x: "0" }}
+                viewport={{ once: true }}
                 transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.linux } alt={""}></img>

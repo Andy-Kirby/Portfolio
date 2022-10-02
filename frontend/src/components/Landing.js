@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const Landing = () => {
     return (
-        <div className="landing-container">
+        <motion.div className="landing-container" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
             <motion.div className="main-landing"
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -30,7 +30,7 @@ const Landing = () => {
                 // whileHover={{scale: 1.1}}
                 >TAKE A LOOK</motion.button>
             </Link>
-        </div>
+        </motion.div>
         
     )
 }
