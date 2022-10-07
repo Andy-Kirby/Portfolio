@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const About = () => {
     return (
-        <motion.div className="about-container" id="top" exit={{opacity: 0}}>
+        <motion.div className="about-container" id="top" initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 2}}} exit={{opacity: 0}}>
             <div className="about-left">
                 <motion.img className="andykirby" src={require('../assets/images/andykirby.png')} alt={""} initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 0.8}}}></motion.img>
                 <div style={{ background: "#dfdfdf", height: "3px", width: "60px", margin: "25px", borderRadius: "6px" }}></div>
