@@ -9,7 +9,7 @@ const Languages1 = () => {
                 initial={{ x: "35vw" }}
                 whileInView={{ x: "0" }}
                 viewport={{ once: true }}
-                transition={{duration: 2, type: "spring", delay: 0.5}}>
+                transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.python } alt={""}></img>
                     <div className="skill-name">Python</div>
@@ -33,7 +33,7 @@ const Languages2 = () => {
                 initial={{ x: "22vw" }}
                 whileInView={{ x: "0" }}
                 viewport={{ once: true }}
-                transition={{duration: 2, type: "spring", delay: 0.5}}>
+                transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.html } alt={""}></img>
                     <div className="skill-name">HTML5</div>
@@ -53,7 +53,7 @@ const Tools1 = () => {
                 initial={{ x: "35vw" }}
                 whileInView={{ x: "0" }}
                 viewport={{ once: true }}
-                transition={{duration: 2, type: "spring", delay: 0.5}}>
+                transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.react } alt={""}></img>
                     <div className="skill-name">React-Native</div>
@@ -77,7 +77,7 @@ const Tools2 = () => {
                 initial={{ x: "22vw" }}
                 whileInView={{ x: "0" }}
                 viewport={{ once: true }}
-                transition={{duration: 2, type: "spring", delay: 0.5}}>
+                transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.express } alt={""}></img>
                     <div className="skill-name">Express API</div>
@@ -101,7 +101,7 @@ const Software1 = () => {
                 initial={{ x: "35vw" }}
                 whileInView={{ x: "0" }}
                 viewport={{ once: true }}
-                transition={{duration: 2, type: "spring", delay: 0.5}}>
+                transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.apple } alt={""}></img>
                     <div className="skill-name">MacOS</div>
@@ -125,7 +125,7 @@ const Software2 = () => {
                 initial={{ x: "22vw" }}
                 whileInView={{ x: "0" }}
                 viewport={{ once: true }}
-                transition={{duration: 2, type: "spring", delay: 0.5}}>
+                transition={{duration: 2, type: "spring"}}>
                 <div className="skill-card">
                     <img className="skill-svg" src={ icons.linux } alt={""}></img>
                     <div className="skill-name">Linux</div>
