@@ -393,10 +393,8 @@ ul {
 .macbook {
   display: none;
 }
-.logo {
-  display: flex;
-  justify-self: center;
-  font-size: 2rem;
+a.logo {
+  font-size: 1.4rem;
 }
 .center {
   display: block;
@@ -512,11 +510,11 @@ ul li:nth-child(2){
   align-items: center;
   width: 90vw;
 }
-.about-text {
+p.about-text {
   text-align: center;
   font-family: Blair;
-  font-size: 1.2rem;
-  max-width: 30ch;
+  font-size: 1.1rem;
+  max-width: 29ch;
   padding: 0px;
 }
 .signature {
