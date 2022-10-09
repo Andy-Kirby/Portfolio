@@ -382,8 +382,10 @@ input.input-error, select.input-error, textarea.input-error, select.input-error 
 /* ---------------------------------------------- MOBILE DEVICE ------------------------------------------------- */
 
 @media screen and (max-width: 480px) {
-body {
+body html {
   scroll-behavior: smooth;
+  padding:0px;
+  margin: 0px;
 }
 ul {
   display: none;
@@ -392,7 +394,8 @@ ul {
   display: none;
 }
 .logo {
-  margin-left: 10rem;
+  display: flex;
+  justify-self: center;
   font-size: 2rem;
 }
 .center {
@@ -481,7 +484,7 @@ ul li:nth-child(2){
   box-sizing: border-box;
   font-family: Blair;
   color: #ffffff;
-  padding-left: 10vw;
+  padding-left: 6vw;
 }
 .main-landing {
   margin-top: 20vh;
@@ -494,6 +497,9 @@ ul li:nth-child(2){
   margin-top: 5vh;
   padding-right: 10vw;
   line-height: 180%;
+}
+.lets-go-link {
+  margin-left: 3vw;
 }
 .about-container {
   display: flex;
@@ -530,7 +536,7 @@ ul li:nth-child(2){
 .about-right {
   scroll-margin-top: 60px;
   margin-left: 0vw;
-  height: 90vh;
+  height: 100vh;
   width: 50vw;
   background-color: #ececec;
   overflow: hidden;
@@ -564,14 +570,16 @@ ul li:nth-child(2){
   margin: 12px;
 }
 .project-container {
-  height: 62vh;
-}
-.contact-title{
-  font-size: 1.4rem;
-  margin-top: 90px;
+  height: 67vh;
 }
 .contact-container {
-  height: 62vh;
+  height: 75vh !important;
+  
+}
+.contact-title{
+  font-size: 1.4rem !important;
+  margin-top: 70px !important;
+
 }
 .contact-card {
   display: flex;
@@ -604,6 +612,7 @@ form {
 }
 .footer-container {
   position: relative;
+  height: 20vh;
   bottom: 0;
   width: 100%;
   font-size: 0.7rem;
@@ -613,7 +622,7 @@ form {
 
 @media  screen and (max-width: 768px) {
 body {
-  /* overflow: hidden; */
+  height: 100%;
   scroll-behavior: smooth;
 }
 ul {
@@ -710,8 +719,9 @@ ul li:nth-child(2){
 .about-right {
   scroll-margin-top: 60px;
   margin-left: 0vw;
-  height: 90vh;
+  height: 90%;
   width: 100vw;
+  /* padding-bottom: 30vh; */
   /* background-color: #bbbbbb; */
 }
 .tech-title {
@@ -782,6 +792,8 @@ form {
 }
 .footer-container {
   position: relative;
+  min-height: 100%;
+  height: auto !important;
   bottom: 0;
   width: 100%;
   font-size: 0.7rem;

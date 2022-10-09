@@ -23,10 +23,10 @@ const Landing = () => {
                 animate={{x: 0}}
                 transition={{duration: 2, type: "spring"}}
                 ></motion.img>
-            <Link to="/about" style={{width: '50px'}}>
+            <Link className="lets-go-link" to="/about" style={{width: '0px'}}>
                 <motion.button className="lets-go"
                 animate={{scale: 1.05}}
-                transition={{duration: 0.8, yoyo: Infinity}}
+                transition={{duration: 0.8, repeat: Infinity}}
                 // whileHover={{scale: 1.1}}
                 >TAKE A LOOK</motion.button>
             </Link>

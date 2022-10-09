@@ -13,7 +13,7 @@ const Footer = () => {
                 <motion.a href="https://github.com/Andy-Kirby" className="contact-github" whileHover= {{scale: 1.2}}><img src={ Github } id="github-btn" alt=""></img></motion.a>
                 <motion.a href="mailto:info@andykirby.co.uk" className="contact-mail" whileHover= {{scale: 1.2}}><img src={ Email } id="mail-btn" alt=""></img></motion.a>
             </div>
-            <div style={{ padding: "25px" }}className="copyright">© 2022 ANDREW KIRBY. All Rights Reserved. </div>
+            <div style={{ margin: "25px" }}className="copyright">© 2022 ANDREW KIRBY. All Rights Reserved. </div>
         </motion.div>
     )
 }
