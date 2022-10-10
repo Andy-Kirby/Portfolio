@@ -27,7 +27,6 @@ header .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px 20px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
@@ -162,7 +161,7 @@ ul li:nth-child(2){
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
+  overflow-x: clip;
   margin-left: 8vw;
   width: 47vw;
 }
@@ -379,426 +378,9 @@ input.input-error, select.input-error, textarea.input-error, select.input-error 
   font-family: Blair;
 }
 
-/* ---------------------------------------------- MOBILE DEVICE ------------------------------------------------- */
+/* ---------------------------------------------- LARGE TABLET ------------------------------------------------- */
 
-@media screen and (max-width: 480px) {
-body html {
-  scroll-behavior: smooth;
-  padding:0px;
-  margin: 0px;
-}
-ul {
-  display: none;
-}
-.macbook {
-  display: none;
-}
-a.logo {
-  font-size: 1.4rem;
-}
-.center {
-  display: block;
-  width: 30px;
-}
-
-.center:before,
-.center:after,
-.center div {
-  background: rgb(66, 66, 66);
-  content: "";
-  display: block;
-  height: 2px;
-  border-radius: 6px;
-  margin: 5px 0;
-  transition: 0.5s;
-}
-.open:before {
-  transform: translateY(7px) rotate(135deg);
-}
-.open:after {
-  transform: translateY(-7px) rotate(-135deg);
-}
-.open div {
-  transform: scale(0);
-}
-.modal-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  z-index: 20;
-}
-.modal-blur {
-  position: fixed;
-  display: flex;
-  /* height: 100vh; */
-  /* width: 100vw; */
-  /* background: #ffffff; */
-  justify-content: center;
-  background-color: rgba(123, 123, 123, 0.5);
-}
-.modal-background {
-  position: fixed;
-  display: flex;
-  top: 50px;
-  height: 92vh;
-  width: 95vw;
-  background: #f9f9f9;
-  align-items: center;
-  justify-content: center;
-  border: #474747;
-  border-style: solid;
-  border-radius: 9px;
-
-}
-.modal-links {
-  display: flex;
-  flex-direction: column;
-  font-family: Blair;
-  color: rgb(85, 85, 85);
-  font-size: 1.5rem;
-  padding: 0px;
-  /* justify-content: space-between; */
-  text-decoration: none;
-  z-index: 100;
-}
-.modal-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
-  color: inherit;
-}
-ul li:nth-child(2){
-  display: block;
-}
-.landing-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-image: url('./assets/images/background.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  box-sizing: border-box;
-  font-family: Blair;
-  color: #ffffff;
-  padding-left: 6vw;
-}
-.main-landing {
-  margin-top: 20vh;
-  font-size: 1rem;
-  margin-bottom: 5vh;
-  padding-right: 10vw;
-}
-.hi-landing {
-  font-size: 1rem;
-  margin-top: 5vh;
-  padding-right: 10vw;
-  line-height: 180%;
-}
-.lets-go-link {
-  margin-left: 3vw;
-}
-.about-container {
-  display: flex;
-  flex-direction: column;
-}
-.about-left {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90vw;
-}
-p.about-text {
-  text-align: center;
-  font-family: Blair;
-  font-size: 1.1rem;
-  max-width: 29ch;
-  padding: 0px;
-}
-.signature {
-  margin-top: 0px;
-  font-family: Signature;
-  text-align: center;
-  font-size: 1.6rem;
-}
-.print-name {
-  margin-right: 100px;
-  align-self:flex-end;
-  font-family: Blair;
-  font-size: 0.8rem;
-  padding-bottom: 70px;
-}
-
-.about-right {
-  scroll-margin-top: 60px;
-  margin-left: 0vw;
-  height: 100vh;
-  width: 50vw;
-  background-color: #ececec;
-  overflow: hidden;
-}
-.tech-title {
-  font-family: Blair;
-  font-size: 1.5rem;
-  margin-top: 30px;
-}
-.tech-sub {
-  align-self: center;
-  font-size: 1rem;
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-}
-.tech-sub-cards {
-  display: flex;
-}
-.skill-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0px 0px;
-}
-.skill-svg {
-  padding: 0px;
-}
-.skill-name {
-  width: 95px;
-  padding: 6px;
-  margin: 12px;
-}
-.project-container {
-  height: 67vh;
-}
-.contact-container {
-  height: 75vh !important;
-  
-}
-.contact-title{
-  font-size: 1.4rem !important;
-  margin-top: 70px !important;
-
-}
-.contact-card {
-  display: flex;
-  justify-content: center;
-  width: 75vw;
-  margin-bottom: 10px;
-  margin-top: 28px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-}
-.contact-fields  {
-  display: flex;
-  flex-direction: column;
-}
-.first-last {
-  flex-direction: column;
-}
-.email-phone {
-  flex-direction: column;
-}
-
-#message {
-  width: 250px;
-  border-radius: 8px;
-}
-.submit {
-  width: 270px;
-}
-.footer-container {
-  position: relative;
-  height: 20vh;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.7rem;
-}
-}
-/* ---------------------------------------------- SMALL TABLET ------------------------------------------------- */
-
-@media  screen and (max-width: 768px) {
-body {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-ul {
-  display: none;
-}
-.macbook {
-  margin-left: 35vw;
-  margin-top: 5vh;
-  position: absolute;
-  max-width: 50%;
-  max-height: 50%;
-}
-.logo {
-  margin-left: 10rem;
-  font-size: 2rem;
-}
-.center {
-  display: block;
-  width: 30px;
-}
-
-.center:before,
-.center:after,
-.center div {
-  background: rgb(66, 66, 66);
-  content: "";
-  display: block;
-  height: 2px;
-  border-radius: 6px;
-  margin: 5px 0;
-  transition: 0.5s;
-}
-.open:before {
-  transform: translateY(7px) rotate(135deg);
-}
-.open:after {
-  transform: translateY(-7px) rotate(-135deg);
-}
-.open div {
-  transform: scale(0);
-}
-
-/* MODAL */
-
-ul li:nth-child(2){
-  display: block;
-}
-.main-landing {
-  margin-top: 20vh;
-  font-size: 3rem;
-  margin-bottom: 5vh;
-  padding-right: 10vw;
-}
-.hi-landing {
-  font-size: 1rem;
-  margin-top: 5vh;
-  padding-right: 10vw;
-  line-height: 180%;
-}
-.contact-card {
-  margin-top: 28px;
-}
-.about-container {
-  display: flex;
-  flex-direction: column;
-}
-.about-left {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
-.about-text {
-  text-align: center;
-  font-family: Blair;
-  font-size: 1.2rem;
-  max-width: 30ch;
-  padding: 0px;
-}
-.signature {
-  margin-top: 0px;
-  font-family: Signature;
-  text-align: center;
-  font-size: 1.6rem;
-}
-.print-name {
-  margin-right: 100px;
-  align-self:flex-end;
-  font-family: Blair;
-  font-size: 0.8rem;
-  margin-bottom: 30px;
-}
-.about-right {
-  scroll-margin-top: 60px;
-  margin-left: 0vw;
-  height: 90%;
-  width: 100vw;
-  /* padding-bottom: 30vh; */
-  /* background-color: #bbbbbb; */
-}
-.tech-title {
-  font-family: Blair;
-  font-size: 1.5rem;
-  margin-top: 30px;
-}
-.tech-sub {
-  align-self: center;
-  font-size: 1rem;
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-}
-.tech-sub-cards {
-  display: flex;
-}
-.skill-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0px 0px;
-}
-.skill-svg {
-  padding: 0px;
-}
-.skill-name {
-  width: 95px;
-  padding: 6px;
-  margin: 12px;
-}
-.contact-title{
-  font-size: 1.4rem;
-  margin-top: 100px;
-  margin-bottom: -10px;
-}
-.contact-container {
-  height: 62vh;
-}
-.contact-card {
-
-  margin-bottom: 0px;
-}
-form {
-  display: flex;
-  margin-top: -10px;
-  flex-direction: column;
-  width: 50vw;
-}
-.contact-fields  {
-  display: flex;
-  flex-direction: column;
-}
-.first-last {
-  flex-direction: column;
-}
-.email-phone {
-  flex-direction: column;
-}
-
-#message {
-  width: 250px;
-  border-radius: 8px;
-}
-.submit {
-  width: 270px;
-  padding: 15px;
-  margin-bottom: -10px;
-}
-.footer-container {
-  position: relative;
-  min-height: 100%;
-  height: auto !important;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.7rem;
-}
-}
-
-@media  screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 body {
   /* overflow: hidden; */
   scroll-behavior: smooth;
@@ -898,12 +480,189 @@ ul li:nth-child(2){
   font-size: 0.8rem;
   margin-bottom: 30px;
 }
-.about-right #skills {
-  /* scroll-margin-top: 60px; */
-  margin-left: 0vw;
-  height: 90vh;
+.about-right {
   width: 100vw;
-  /* background-color: #bbbbbb; */
+  margin-left: 0vw;
+  background: #ececec;
+}
+.tech-title {
+  font-family: Blair;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.tech-sub {
+  align-self: center;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.tech-sub-cards {
+  display: flex;
+}
+.skill-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 0px;
+}
+.skill-svg {
+  padding: 0px;
+}
+.skill-name {
+  width: 95px;
+  padding: 6px;
+  margin: 12px;
+}
+.contact-title{
+  font-size: 1.4rem;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+.contact-container {
+  height: 62vh;
+}
+.contact-card {
+  margin-bottom: 0px;
+}
+form {
+  display: flex;
+  margin-top: -10px;
+  flex-direction: column;
+  width: 50vw;
+}
+.contact-fields  {
+  display: flex;
+  flex-direction: column;
+}
+.first-last {
+  flex-direction: column;
+}
+.email-phone {
+  flex-direction: column;
+}
+#message {
+  width: 250px;
+  border-radius: 8px;
+}
+.submit {
+  width: 270px;
+  margin-bottom: -10px;
+}
+.footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.7rem;
+}
+}
+
+/* ---------------------------------------------- SMALL TABLET ------------------------------------------------- */
+
+@media  screen and (max-width: 768px) {
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+ul {
+  display: none;
+}
+.macbook {
+  margin-left: 35vw;
+  margin-top: 5vh;
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+}
+.logo {
+  margin-left: 10rem;
+  font-size: 2rem;
+}
+.center {
+  display: block;
+  width: 30px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: rgb(66, 66, 66);
+  content: "";
+  display: block;
+  height: 2px;
+  border-radius: 6px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.open:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.open:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.open div {
+  transform: scale(0);
+}
+
+/* MODAL */
+
+ul li:nth-child(2){
+  display: block;
+}
+.main-landing {
+  margin-top: 20vh;
+  font-size: 3rem;
+  margin-bottom: 5vh;
+  padding-right: 10vw;
+}
+.hi-landing {
+  font-size: 1rem;
+  margin-top: 5vh;
+  padding-right: 10vw;
+  line-height: 180%;
+}
+.contact-card {
+  margin-top: 28px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-left {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.about-text {
+  text-align: center;
+  font-family: Blair;
+  font-size: 1.2rem;
+  max-width: 30ch;
+  padding: 0px;
+}
+.signature {
+  margin-top: 0px;
+  font-family: Signature;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.print-name {
+  margin-right: 100px;
+  align-self:flex-end;
+  font-family: Blair;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+#skills {
+  width: 100vw;
+  margin-left: 0vw;
+  background: #ececec;
+  /* scroll-margin-top: 60px; */
 }
 .tech-title {
   font-family: Blair;
@@ -968,12 +727,250 @@ form {
 }
 .submit {
   width: 270px;
+  padding: 15px;
   margin-bottom: -10px;
 }
 .footer-container {
   position: relative;
+  min-height: 100%;
+  height: auto !important;
   bottom: 0;
   width: 100%;
   font-size: 0.7rem;
 }
 }
+
+/* ---------------------------------------------- MOBILE DEVICE ------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+ul {
+  display: none;
+}
+.macbook {
+  display: none;
+}
+
+.logo {
+  margin-left: 3rem;
+  font-size: 1.4rem;
+}
+.center {
+  display: block;
+  width: 30px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: rgb(66, 66, 66);
+  content: "";
+  display: block;
+  height: 2px;
+  border-radius: 6px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.open:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.open:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.open div {
+  transform: scale(0);
+}
+.modal-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+.modal-blur {
+  position: fixed;
+  display: flex;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* background: #ffffff; */
+  justify-content: center;
+  background-color: rgba(123, 123, 123, 0.5);
+}
+.modal-background {
+  position: fixed;
+  display: flex;
+  top: 50px;
+  height: 92vh;
+  width: 95vw;
+  background: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  border: #474747;
+  border-style: solid;
+  border-radius: 9px;
+
+}
+.modal-links {
+  display: flex;
+  flex-direction: column;
+  font-family: Blair;
+  color: rgb(85, 85, 85);
+  font-size: 1.5rem;
+  padding: 0px;
+  /* justify-content: space-between; */
+  text-decoration: none;
+  z-index: 100;
+}
+.modal-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+ul li:nth-child(2){
+  display: block;
+}
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('./assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  font-family: Blair;
+  color: #ffffff;
+  padding-left: 6vw;
+}
+.main-landing {
+  margin-top: 20vh;
+  font-size: 3rem;
+  margin-bottom: 5vh;
+  padding-right: 10vw;
+}
+.hi-landing {
+  font-size: 1rem;
+  margin-top: 5vh;
+  padding-right: 10vw;
+  line-height: 180%;
+}
+.lets-go-link {
+  margin-left: 3vw;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-left {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.about-text {
+  text-align: center;
+  font-family: Blair;
+  font-size: 1.1rem;
+  max-width: 29ch;
+  padding: 0px;
+}
+.signature {
+  margin-top: 0px;
+  font-family: Signature;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.print-name {
+  margin-right: 100px;
+  align-self:flex-end;
+  font-family: Blair;
+  font-size: 0.8rem;
+  padding-bottom: 70px;
+}
+#skills {
+  width: 100vw;
+  margin-left: 0vw;
+  background: #ececec;
+  scroll-margin-top: 60px;
+}
+.tech-title {
+  font-family: Blair;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.tech-sub {
+  align-self: center;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.tech-sub-cards {
+  display: flex;
+}
+.skill-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 0px;
+}
+.skill-svg {
+  padding: 0px;
+}
+.skill-name {
+  width: 95px;
+  padding: 6px;
+  margin: 12px;
+}
+.project-container {
+  height: 68vh;
+}
+.contact-container {
+  height: 70vh;
+}
+.contact-title{
+  font-size: 1.4rem;
+}
+.contact-card {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  margin-bottom: 10px;
+  margin-top: 28px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-fields  {
+  display: flex;
+  flex-direction: column;
+}
+.first-last {
+  flex-direction: column;
+}
+.email-phone {
+  flex-direction: column;
+}
+
+#message {
+  width: 250px;
+  border-radius: 8px;
+}
+.submit {
+  width: 270px;
+}
+.footer-container {
+  position: relative;
+  height: 20vh;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.7rem;
+}
+}
+
+
