@@ -382,7 +382,6 @@ input.input-error, select.input-error, textarea.input-error, select.input-error 
 
 @media screen and (max-width: 1024px) {
 body {
-  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
 ul {
@@ -819,7 +818,6 @@ ul {
   color: rgb(85, 85, 85);
   font-size: 1.5rem;
   padding: 0px;
-  /* justify-content: space-between; */
   text-decoration: none;
   z-index: 100;
 }
