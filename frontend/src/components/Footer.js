@@ -9,7 +9,7 @@ const Footer = () => {
             <div style={{ fontSize: "1rem", color: "#ebebeb", marginTop: "45px" }}>GET IN TOUCH</div>
             <div style={{ backgroundColor: "#aaaaaa", height: "1px", width: "60px", margin: "20px"}}></div>
             <div className="icon-container">
-                <motion.a href="https://www.instagram.com/andykirby.uk" className="contact-instagram" whileHover= {{scale: 1.2}}><img src={ Instagram } id="instagram-btn" alt=""></img></motion.a>
+                <motion.a href="https://www.instagram.com/andykirby.co.uk" className="contact-instagram" whileHover= {{scale: 1.2}}><img src={ Instagram } id="instagram-btn" alt=""></img></motion.a>
                 <motion.a href="https://github.com/Andy-Kirby" className="contact-github" whileHover= {{scale: 1.2}}><img src={ Github } id="github-btn" alt=""></img></motion.a>
                 <motion.a href="mailto:info@andykirby.co.uk" className="contact-mail" whileHover= {{scale: 1.2}}><img src={ Email } id="mail-btn" alt=""></img></motion.a>
             </div>
